@@ -12,7 +12,8 @@
 
 ## 建立陆地面要素
 1.打开ArcToolBox——数据管理工具——要素——要素转面
-[2.png](https://postimg.cc/kDSFScZR)
+
+![](https://github.com/QJR-wj/images/blob/6713eaddab801317fad10b7410057c97de99d13f/2.png)
 
 ## 建立海洋面要素
 1.画一个比原始影像图尺寸大的AOI（只做一个，全部图都用它）
