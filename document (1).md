@@ -19,22 +19,26 @@
 1.画一个比原始影像图尺寸大的AOI（只做一个，全部图都用它）
 2.打开ArcToolBox——分析工具——叠加分析——擦除
 3.用AOI擦除polygon面，得到sea面要素
-[3.png](https://postimg.cc/tnYxXFfn)
+![]([https://postimg.cc/tnYxXFfn](https://github.com/QJR-wj/images/blob/c2a9e6c3394fb6a2493119c39960a4425ead616f/3.png))
 
 ## 陆地和海洋合成一个面要素
 1.地理处理——合并——命名为merge
-[4.png](https://postimg.cc/fkrd8gt9)
+
+![]([https://postimg.cc/fkrd8gt9](https://github.com/QJR-wj/images/blob/c2a9e6c3394fb6a2493119c39960a4425ead616f/4.png))
 
 ## 制作栅格
 1.打开merge面的打开数据表，创建字段class
-[5.png](https://postimg.cc/qz63SX2V)
+
+![]([https://postimg.cc/qz63SX2V](https://github.com/QJR-wj/images/blob/c2a9e6c3394fb6a2493119c39960a4425ead616f/5.png))
 2.点击对应的区域，再右键点击class，打开字段计算器，将陆地输入4，海洋输入5
-[6.png](https://postimg.cc/tshVCqrz)
+
+![]([https://postimg.cc/tshVCqrz](https://github.com/QJR-wj/images/blob/c2a9e6c3394fb6a2493119c39960a4425ead616f/6.png))
+
 3.打开ArcToolBox——转换工具——转为栅格——面转栅格——改参数和环境参数（注意这里的输出文件命名后缀带上.tif，负责它生成不出tif主文件，只会得到一个文件夹）
-[7.png](https://postimg.cc/qh7tL8pF)
-[8.png](https://postimg.cc/YLGvcMG3)
-[9.png](https://postimg.cc/bGydyQDM)
-[10.png](https://postimg.cc/DWx0881g)
+![]([https://postimg.cc/qh7tL8pF](https://github.com/QJR-wj/images/blob/c2a9e6c3394fb6a2493119c39960a4425ead616f/7.png))
+![]([https://postimg.cc/YLGvcMG3](https://github.com/QJR-wj/images/blob/c2a9e6c3394fb6a2493119c39960a4425ead616f/8.png))
+![]([https://postimg.cc/bGydyQDM](https://github.com/QJR-wj/images/blob/c2a9e6c3394fb6a2493119c39960a4425ead616f/9.png))
+![]([https://postimg.cc/DWx0881g](https://github.com/QJR-wj/images/blob/c2a9e6c3394fb6a2493119c39960a4425ead616f/10.png))
 4.搜索——栅格计算器——输入
 ```javascript
 Con(Raster("mask.tif") == 4, 1, 0)
@@ -43,4 +47,4 @@ Con(Raster("mask.tif") == 4, 1, 0)
 
 ## 裁剪mask
 1.打开ArcToolBox——Spatial Analyst工具——提取分析——按掩膜提取
-[11.png](https://postimg.cc/0M3N0FWb)
+![]([https://postimg.cc/0M3N0FWb](https://github.com/QJR-wj/images/blob/c2a9e6c3394fb6a2493119c39960a4425ead616f/11.png))
