@@ -4,7 +4,8 @@
 
 1.打开目录
 2.创建shapefile文件，命名"land"
-[1.png](https://postimg.cc/R3nzmysF)
+[1.png](<img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/252e4f89-7ae6-49e2-a27e-d6f90c5fa1f6" />
+)
 3.编辑要素，创建要素，画陆地轮廓
 
 ## 建立陆地面要素
