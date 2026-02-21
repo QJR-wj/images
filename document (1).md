@@ -6,7 +6,7 @@
 
 2.创建shapefile文件，命名"land"
 
-![](1.png)
+![](https://github.com/QJR-wj/images/blob/1662800bc2e02ad3c6d80dcff5768bf184595d29/1.png))
 
 3.编辑要素，创建要素，画陆地轮廓
 
